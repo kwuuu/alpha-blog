@@ -2,10 +2,12 @@
   <section>
     <div class="jumbotron center">
       <h1>Alpha Blog</h1>
-      <p><%= link_to "Sign up now", "#", class: "btn btn-primary btn-large" %>
+      <p>
+        <%= link_to "Sign up", "#", class: "btn btn-primary btn-large btn-main" %> 
+        <%= link_to "Blog", articles_path, class: "btn btn-primary btn-large btn-main" %> 
+        <%= link_to "About", about_path, class: "btn btn-primary btn-large btn-main" %> 
+      </p>
+      <%= image_tag "snorlax/front.gif" %>
     </div>
-    - <%= link_to "Alpha Blog", articles_path %> -<br />
-    - <%= link_to "About", about_path %> -<br />
-    <%= image_tag "https://data.whicdn.com/images/286687755/original.gif" %>
   </section>
 </article>
