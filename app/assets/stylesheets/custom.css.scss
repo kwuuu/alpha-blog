@@ -1,7 +1,39 @@
-$navbar-default-bg: #222;
+$alpha-blog-bg-color: #5c2b63;
+
+$navbar-default-bg: $alpha-blog-bg-color;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+ 
+* {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  color: #f2f2f2;
+  background: $alpha-blog-bg-color;
+  position: relative;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+a {
+  color: #42f4df;
+  text-decoration: none;
+}
+
+
+
+
 
 #logo {
   float: left;
@@ -31,6 +63,20 @@ $navbar-default-bg: #222;
     font-weight: 900;
     text-shadow: 6px 6px 0 #b64b9d, -3px -3px 0 #b64b9d, 3px -3px 0 #b64b9d, -3px 3px 0 #b64b9d, 3px 3px 0 #b64b9d;
   }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .snorlax-image {
+    min-height: 200px;
+  }
+  .snorlax-back {
+    margin-top: 12px;
+  }
 }
 .btn-main {
   color: yellow;
@@ -42,5 +88,12 @@ $navbar-default-bg: #222;
   margin-bottom: 2rem;
   &:hover {
     background: #c55142;
+  }
+}
+.footer-nav {
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 0 .25rem;
   }
 }

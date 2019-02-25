@@ -2,8 +2,12 @@
   <section>
     <div class="jumbotron center">
       <h1>About</h1>
-      <p><%= link_to "Go Home", root_path, class: "btn btn-primary btn-large btn-main" %></p>
-      <%= image_tag "snorlax/back.gif" %>
+      <p>
+        <%= link_to "Go Home", root_path, class: "btn btn-primary btn-large btn-main" %> 
+        <%= link_to "Blog", articles_path, class: "btn btn-primary btn-large btn-main" %> 
+        <%= link_to "Sign up", "#", class: "btn btn-primary btn-large btn-main" %> 
+      </p>
+      <div class="snorlax-image"><%= image_tag "snorlax/back.gif", class: "snorlax-back" %></div>
     </div>
   </section>
 </article>
